@@ -1,0 +1,146 @@
+
+/* General Page Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Main Section */
+main {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Search Section */
+.search-section {
+    margin-bottom: 25px;
+}
+
+input {
+    padding: 12px;
+    width: 65%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #243b67;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #162747;
+}
+
+/* Weather Card */
+.weather-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+}
+
+.weather-card h2 {
+    color: #243b67;
+    margin-bottom: 10px;
+}
+
+.date-time {
+    color: #4b5f8a;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.weather-icon {
+    font-size: 65px;
+    margin: 10px;
+}
+
+.weather-card h1 {
+    font-size: 45px;
+    color: #243b67;
+}
+
+.weather-card p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Weather Details */
+.details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.detail-card {
+    background: white;
+    padding: 20px 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.detail-card h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #243b67;
+}
+
+.detail-card p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Message */
+#message {
+    margin-top: 20px;
+    color: #243b67;
+}
+
+/* Footer */
+footer {
+    margin-top: 35px;
+    color: white;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 500px) {
+    .details {
+        grid-template-columns: 1fr;
+    }
+
+    input {
+        width: 65%;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
